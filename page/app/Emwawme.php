@@ -79,14 +79,6 @@ class Emwawme {
 	public static function getUnitAlpha() {
 		$names_length = count(Emwawme::$names);
 
-		// if (isset($_POST['emw--unit-alpha'])) {
-		//   $names_length = $_POST['emw--unit-alpha'] % ($names_length + 1);
-
-		//   if ($names_length <= 0) {
-		//   	$names_length = 1;
-		//   }
-		// }
-
 		if (isset($_GET['emw--unit-alpha'])) {
 			  $names_length = $_GET['emw--unit-alpha'] % ($names_length + 1);
 
