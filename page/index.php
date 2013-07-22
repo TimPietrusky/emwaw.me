@@ -198,8 +198,8 @@ footer {
             <b>龴ↀ◡ↀ龴</b>
             
             <form method="GET" action="#code">
-                <label for="emw--unit-alpha" class="emw__element-alpha">Change the amount of the generated SCSS helper: </label>
-                <input name="emw--unit-alpha" type="number" value="<?php echo Emwawme::getUnitAlpha(); ?>"/>
+                <label for="a" class="emw__element-alpha">Change the amount of the generated SCSS helper (up to 16): </label>
+                <input name="a" type="number" value="<?php echo Emwawme::getUnitAlpha(); ?>"/>
                 
                 <button type="submit">generate</button>
             </form>

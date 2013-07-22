@@ -2413,6 +2413,8 @@ button {
   border: none;
   float: right;
   width: 100%;
+  font-weight: 700;
+  padding: 1.075em 0.5em;
 }
 
 label {
