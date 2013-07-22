@@ -1,0 +1,158 @@
+/**
+* emwaw.me (short: emw)
+*
+* 
+* An awesome em framework!
+* Create your own version on http://emwaw.me
+*
+* Fork it on GitHub
+* https://github.com/TimPietrusky/emwaw.me
+* 
+* 
+* 2013 by Tim Pietrusky
+* timpietrusky.com
+*/ 
+
+/**
+ * 
+ * Colors 
+ * 
+ */
+$emw--color-alpha: 0;
+$emw--color-beta: 0;
+$emw--color-gamma: 0;
+$emw--color-delta: 0;
+$emw--color-epsilon: 0;
+$emw--color-zeta: 0;
+$emw--color-eta: 0;
+$emw--color-theta: 0;
+$emw--color-iota: 0;
+$emw--color-kappa: 0;
+$emw--color-lambda: 0;
+$emw--color-my: 0;
+$emw--color-ny: 0;
+$emw--color-xi: 0;
+$emw--color-omikron: 0;
+$emw--color-pi: 0;
+
+
+/**
+ * 
+ * Units 
+ * 
+ */
+$emw--unit-alpha: 0;
+$emw--unit-beta: 0;
+$emw--unit-gamma: 0;
+$emw--unit-delta: 0;
+$emw--unit-epsilon: 0;
+$emw--unit-zeta: 0;
+$emw--unit-eta: 0;
+$emw--unit-theta: 0;
+$emw--unit-iota: 0;
+$emw--unit-kappa: 0;
+$emw--unit-lambda: 0;
+$emw--unit-my: 0;
+$emw--unit-ny: 0;
+$emw--unit-xi: 0;
+$emw--unit-omikron: 0;
+$emw--unit-pi: 0;
+
+
+/**
+ * 
+ * Lists 
+ * 
+ */
+$emw--list-alpha: 0;
+$emw--list-beta: 0;
+$emw--list-gamma: 0;
+$emw--list-delta: 0;
+$emw--list-epsilon: 0;
+$emw--list-zeta: 0;
+$emw--list-eta: 0;
+$emw--list-theta: 0;
+$emw--list-iota: 0;
+$emw--list-kappa: 0;
+$emw--list-lambda: 0;
+$emw--list-my: 0;
+$emw--list-ny: 0;
+$emw--list-xi: 0;
+$emw--list-omikron: 0;
+$emw--list-pi: 0;
+
+
+/**
+ * 
+ * Elements 
+ * 
+ */
+.emw__element-alpha {
+  list-style: none;
+
+  > li {
+    margin-bottom: .5em;
+  }
+}
+
+.emw__element-beta {}
+.emw__element-gamma {}
+.emw__element-delta {}
+.emw__element-epsilon {}
+.emw__element-zeta {}
+.emw__element-eta {}
+.emw__element-theta {}
+.emw__element-iota {}
+.emw__element-kappa {}
+.emw__element-lambda {}
+.emw__element-my {}
+.emw__element-ny {}
+.emw__element-xi {}
+.emw__element-omikron {}
+.emw__element-pi {}
+
+
+/**
+ * 
+ * Modifier 
+ * 
+ */
+%emw__modifier-alpha {}
+%emw__modifier-beta {}
+%emw__modifier-gamma {}
+%emw__modifier-delta {}
+%emw__modifier-epsilon {}
+%emw__modifier-zeta {}
+%emw__modifier-eta {}
+%emw__modifier-theta {}
+%emw__modifier-iota {}
+%emw__modifier-kappa {}
+%emw__modifier-lambda {}
+%emw__modifier-my {}
+%emw__modifier-ny {}
+%emw__modifier-xi {}
+%emw__modifier-omikron {}
+%emw__modifier-pi {}
+
+
+/**
+ * 
+ * Mixins 
+ * 
+ */
+@mixin emw__mixin-alpha() {}
+@mixin emw__mixin-beta() {}
+@mixin emw__mixin-gamma() {}
+@mixin emw__mixin-delta() {}
+@mixin emw__mixin-epsilon() {}
+@mixin emw__mixin-zeta() {}
+@mixin emw__mixin-eta() {}
+@mixin emw__mixin-theta() {}
+@mixin emw__mixin-iota() {}
+@mixin emw__mixin-kappa() {}
+@mixin emw__mixin-lambda() {}
+@mixin emw__mixin-my() {}
+@mixin emw__mixin-ny() {}
+@mixin emw__mixin-xi() {}
+@mixin emw__mixin-omikron() {}
+@mixin emw__mixin-pi() {}

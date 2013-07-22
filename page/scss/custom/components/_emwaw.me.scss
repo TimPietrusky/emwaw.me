@@ -1,0 +1,101 @@
+/**
+ * 
+ * Colors 
+ * 
+ */
+$emw--color-alpha: #fff;
+$emw--color-beta: #000;
+$emw--color-gamma: #e74c3c;
+$emw--color-delta: 0;
+$emw--color-epsilon: 0;
+
+/**
+ * 
+ * Units 
+ * 
+ */
+$emw--unit-alpha: 2.15em;
+$emw--unit-beta: $emw--unit-alpha / 2;
+$emw--unit-gamma: $emw--unit-beta * 5;
+$emw--unit-delta: $emw--unit-gamma / 8;
+$emw--unit-epsilon: .95em;
+$emw--unit-zeta: 15%;
+$emw--unit-eta: 1.05em;
+$emw--unit-theta: .5em;
+
+/**
+ * 
+ * Modifier 
+ * 
+ */
+%emw__modifier-alpha {
+  margin: 25% 25%;
+}
+
+%emw__modifier-beta {
+  margin-top: $emw--unit-beta;
+  margin-bottom: $emw--unit-alpha;
+}
+
+%emw__modifier-gamma {
+  margin-top: $emw--unit-alpha;
+  margin-bottom: $emw--unit-beta;
+}
+
+%emw__modifier-delta {
+  margin-top: $emw--unit-alpha / 1.75;
+  margin-bottom: $emw--unit-alpha / 2;
+}
+
+%emw__modifier-epsilon {
+  margin-bottom: $emw--unit-alpha !important;
+}
+
+%emw__modifier-zeta {}
+%emw__modifier-eta {}
+%emw__modifier-theta {}
+
+/**
+ * 
+ * Elements 
+ * 
+ */
+.emw__element-alpha {
+  @extend %emw__modifier-epsilon;
+}
+
+.emw__element-beta {
+
+}
+
+/**
+ * 
+ * Mixins 
+ * 
+ */
+@mixin emw__mixin-alpha($alpha, $beta) {
+  padding-left: $alpha;
+  padding-right: $alpha;
+
+  @include breakpoint(small) {
+    padding-left: $beta;
+    padding-right: $beta;
+  }
+
+  @include breakpoint(medium) {
+    padding-left: $beta;
+    padding-right: $beta;
+  }
+}
+
+@mixin emw__mixin-beta() {
+
+}
+
+@mixin emw__mixin-gamma() {
+
+}
+
+@mixin emw__mixin-delta() {
+
+}

@@ -1,0 +1,99 @@
+/*
+ * Buttons
+ */
+.button {
+  position: relative;
+  padding: .325em .5em;
+  text-decoration: none;
+  text-align: left;
+  @include border-radius($videor-border-radius-alpha);
+
+  &.button__full {
+    width: 100%;
+  }
+
+  &.button__icon {
+    padding-left: 2em;
+
+    // Default icon: ▸
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: .5em;
+      content: '\25B8';
+      height: 1em;
+      width: 1em;
+      color: $videor-color-gamma;
+      display: inline-block;
+      border-radius: 50%;
+      padding: 0 0 0 .3em;
+      margin: -.5em 0 0 0;
+      line-height: .85;
+      background: $videor-color-kappa;
+      @include background(linear-gradient(right, $videor-color-iota, $videor-color-kappa));
+      @include box-shadow(0 0 0 .1em $videor-color-epsilon);
+    }
+  }
+  
+  // Green / rounded
+  &.button--alpha {
+    color: #fff;
+    border: none;
+    background: $videor-color-theta;
+    font-family: $videor-font-alpha;
+    
+    &:hover {
+      @include background(linear-gradient(top, $videor-color-theta 0%, $videor-color-alpha 100%));
+    }
+    
+    &:active {
+      background: $videor-color-alpha;
+    }
+  }
+  
+  // Grey
+  &.button--beta {
+    border: 1px solid $videor-color-zeta;
+    text-decoration: none;
+    color: #000;
+    background: $videor-color-iota;
+    @include background(linear-gradient(top, $videor-color-iota, $videor-color-kappa));
+    
+    &:hover {
+      @include background(linear-gradient(top, $videor-color-kappa, $videor-color-iota));
+    }
+    
+    &:active {
+      background: $videor-color-zeta;
+    }
+  }
+  
+  // Green / squared / active-state
+  &.button--gamma {
+    color: $videor-color-gamma;
+    background: $videor-color-eta;
+    font-weight: bold;
+    text-align: center;
+    min-width: 2.25em;
+    display: inline-block;
+    @include border-radius(0);
+    
+    &.active,
+    &:hover {
+      color: #fff;
+      background: $videor-color-theta;
+    }
+  }
+
+  // Icons
+  &.button--delta {
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    @include border-radius(0);
+    
+    &.active,
+    &:hover {
+    }
+  }
+}

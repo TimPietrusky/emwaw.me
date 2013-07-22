@@ -1,0 +1,10 @@
+.decoration {
+  &.decoration--alpha {
+    @extend %ext--gamma;
+    
+    .decoration--alpha__child {
+      @extend %ext--delta;
+      background: #fff;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+.table {
+
+  th,
+  td {
+    padding: $videor-unit-gamma;
+  }
+
+  thead {
+    th {
+      font-weight: normal;
+    }
+  }
+
+  tbody {
+    border-top: 1px dotted $videor-color-eta;
+    border-left: 1px solid $videor-color-eta;
+    border-right: 1px solid $videor-color-eta;
+
+    tr {
+      border-bottom: 1px dotted $videor-color-eta;
+    }
+
+    td {
+      border-right: 1px solid $videor-color-eta;
+
+      &:last-child {
+        border-right: nones;
+      }
+    }
+  }
+
+  &.table__alpha {
+    thead {
+      th {
+        font: 1.15em $videor-font-alpha;
+        font-weight: normal;
+        padding-top: 0;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background: $videor-color-iota;
+        }
+      }
+    }
+
+    td {
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+
+  &.table__beta,
+  &.table__gamma {
+    text-align: left;
+
+    thead {
+      th {
+        font-weight: bold;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background: $videor-color-iota;
+        }
+      }
+    }
+  }
+
+  &.table__gamma {
+    thead {
+      border-top: 1px dotted $videor-color-eta;
+      border-left: 1px solid $videor-color-eta;
+      border-right: 1px solid $videor-color-eta;
+
+      color: $videor-color-gamma;
+
+      th {
+        border-right: 1px solid $videor-color-eta;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .table--child__alpha {
+      border: none;
+
+      tr {
+        &:nth-child(odd) {
+          background: none;
+        }
+      }
+  }
+
+  // Width of the table elements
+  td {
+    &.g-1-1,
+    &.g-5-5 {
+      width: 100%;
+    }
+
+    &.g-1-2,
+    &.g-2-4 {
+      width: 50%;
+    }
+
+    &.g-1-3 {
+      width: 33.33%;
+    }
+
+    &.g-2-3 {
+      width: 66.66%;
+    }
+
+    &.g-1-4 {
+      width: 25%;
+    }
+
+    &.g-3-4 {
+      width: 75%;
+    }
+
+    &.g-1-5 {
+      width: 20%;
+    }
+
+    &.g-2-5 {
+      width: 40%;
+    }
+
+    &.g-3-5 {
+      width: 60%;
+    }
+
+    &.g-4-5 {
+      width: 80%;
+    }
+  }
+}
+
+
+
+/* SHAME */
+
+.table th div.draghandle {
+  background-image: url(../images/ui-icons_888888_256x240.png);
+  background-position: 0px -80px;
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: 3px 10px 3px 5px;
+  cursor:move;
+}
+
+.table th.compare-buttons div {
+  cursor:pointer;
+  background-image: url(../images/compare_buttons.png);
+  width: 25px;
+  height: 23px;
+  display:inline-block;
+  margin-right: 5px;
+}
+
+.table th.compare-buttons .move-first {
+  background-position: 0 0;
+}
+.table th.compare-buttons .move-prev {
+  background-position: -30px 0;
+}
+.table th.compare-buttons .remove-item {
+  background-position: -60px 0;
+}
+.table th.compare-buttons .move-next {
+  background-position: -90px 0;
+}
+.table th.compare-buttons .move-last {
+  background-position: -120px 0;
+}
+
+.table th.compare-buttons .move-first.inactive {
+  background-position: 0 -28px;
+  cursor:default;
+}
+.table th.compare-buttons .move-prev.inactive {
+  background-position: -30px -28px;
+  cursor:default;
+}
+.table th.compare-buttons .move-next.inactive {
+  background-position: -90px -28px;
+  cursor:default;
+}
+.table th.compare-buttons .move-last.inactive {
+  background-position: -120px -28px;
+  cursor:default;
+}

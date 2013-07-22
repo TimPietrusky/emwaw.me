@@ -1,0 +1,67 @@
+// Vertical space between ribbon and screen
+$unit-alpha: $emw--unit-epsilon;
+// Horizontal space between ribbon and screen
+$unit-beta: .75em;
+// Padding for the ribbon
+$unit-gamma: .5em;
+
+/*
+ * Colors
+ */
+$color-alpha: #e74c3c;
+$color-beta: #c0392b;
+$color-gamma: #fff;
+
+/*
+ * Basic styles for the ribbon__modifiers
+ */
+%ribbon__alpha {
+  color: $color-gamma;
+  background: $color-alpha;
+
+  @include transition(
+    color .25s ease-in,
+    background .25s ease-in
+  );
+
+  &:hover {
+    color: $color-alpha;
+    background: $color-gamma;
+  }
+}
+
+/* 
+ * GitHub ribbon base class
+ */
+.ribbon {
+  @extend %ribbon__alpha;
+
+  position: absolute;
+  padding: $unit-gamma;
+  text-decoration: none;
+  
+  /* 
+   * Position of the ribbon
+   */
+  &.ribbon--top-left {
+    top: $unit-alpha;
+    left: $unit-beta;
+  }
+  
+  &.ribbon--top-right {
+    top: $unit-alpha;
+    right: -$unit-beta;
+    padding-right: $unit-beta * 2;
+  }
+  
+  &.ribbon--bottom-left {
+    bottom: $unit-alpha;
+    left: $unit-beta;
+  }
+  
+  &.ribbon--bottom-right {
+    bottom: $unit-alpha;
+    right: -$unit-beta;
+    padding-right: $unit-beta * 2;
+  }
+}

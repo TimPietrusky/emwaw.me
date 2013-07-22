@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+
+/* 
+ * Compass - Import
+ */
+@import "compass/css3";
+
+/*
+ * Global mixins
+ */
+@import "custom/assets/mixins";
+
+/**
+ * inuit.css - Setup
+ */
+@import "vars", "inuit.css/inuit"; 
+
+/*
+ * Import 
+ */
+@import "custom/assets/prism",
+        "custom/assets/fonts",  
+        "custom/components/emwaw.me",
+        "custom/components/github.ribbons";
+
+* { 
+  margin:0; 
+  padding: 0;
+}
+
+body { 
+  font: $emw--unit-eta 'Ubuntu', sans-serif;
+  line-height: $emw--unit-eta * 1.55;
+  background: $emw--color-alpha;
+  color: $emw--color-beta;
+  margin: 0 auto;
+  padding-top: $emw--unit-alpha * 4.15;
+  padding-bottom: $emw--unit-alpha;
+  overflow-x:hidden;
+  @include emw__mixin-alpha($emw--unit-zeta, $emw--unit-theta);
+
+  @include breakpoint(small) {
+    font-size: $emw--unit-beta;
+  }
+
+  @include breakpoint(medium) {
+    font-size: $emw--unit-beta;
+  }
+}
+
+h1 {
+  font-size: $emw--unit-alpha * 1.45;
+  margin-bottom: 0;
+
+  @include breakpoint(medium) {
+    font-size: $emw--unit-alpha / 1.05;
+    margin-bottom: $emw--unit-theta / 6;
+  }
+}
+
+h2 {
+  @extend %emw__modifier-gamma;
+}
+
+a { 
+  color: $emw--color-gamma;
+  text-decoration: none;
+  padding: .25em;
+
+  @include transition(
+    color .25s ease-in,
+    background .25s ease-in
+  );
+  
+  &:hover {
+    text-decoration: none;
+    background: $emw--color-gamma;
+    color: $emw--color-alpha;
+  }
+}
+
+ul {
+  @extend %emw__modifier-beta;
+  margin-left: $emw--unit-eta;
+}
+
+pre {
+  &[class*="language-"] {
+    @extend %emw__modifier-delta;
+    border-radius: 0;
+
+    &.emw__element-delta {
+      @extend %emw__modifier-epsilon;
+    }
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: $emw--unit-epsilon 0;
+  width: 100%;
+  background: $emw--color-alpha;
+
+  ul {
+    list-style: none;
+    margin: 0;
+
+    li {
+      text-align: center;
+    }
+
+    @include breakpoint(medium) {
+      margin-top: .5em;
+
+      li {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  a {
+    background: $emw--color-gamma;
+    color: $emw--color-alpha;
+    padding: $emw--unit-theta;
+    display: inline-block;
+    width: 100%;
+
+    &:hover {
+      background: $emw--color-alpha;
+      color: $emw--color-gamma;
+    }
+  }
+
+  @include emw__mixin-alpha($emw--unit-zeta, $emw--unit-eta);
+
+  @include breakpoint(medium) {
+    z-index: 1337;
+    padding: $emw--unit-theta $emw--unit-theta;
+
+    &.gw {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    > .g {
+      padding-left: 0;
+      width: 50%;
+
+      &.medium-one-whole {
+        width: 100%;
+      }
+      &.medium-one-half {
+        width: 25%;
+      }
+    }
+  }
+}
+
+/*
+ * Footer
+ */
+footer {
+
+}

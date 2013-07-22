@@ -1,0 +1,71 @@
+10
+
+dir
+36277
+svn://svn.atlantismedia.de/magento/Videor/trunk/skin/frontend/videor/default/css/inuit.css
+svn://svn.atlantismedia.de
+
+
+
+2013-06-10T01:34:36.543296Z
+36222
+tpietrusky
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+53c2598e-fbf0-4eaa-962b-06fc366cef29
+
+_inuit.scss
+file
+
+
+
+
+2013-06-05T15:21:49.000000Z
+cb3e7d7782693f5a94648ed1d61c53d2
+2013-06-07T08:29:57.958137Z
+36155
+tpietrusky
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6728
+
+base
+dir
+
+generic
+dir
+
+objects
+dir
+

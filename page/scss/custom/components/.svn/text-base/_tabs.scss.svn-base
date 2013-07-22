@@ -1,0 +1,94 @@
+.tabs {
+  margin: 0;
+  
+  li {
+    float: left;
+  }
+    
+  a {
+    position: relative;
+    display: block;
+    padding: .35em 1em;
+    background: #fff;
+    border: 1px solid $videor-color-zeta;
+    border-bottom: none;
+      
+    // same as the border-width
+    margin-left: -1px;
+    left: 1px;
+
+    &.active,
+    &:hover {
+      padding: .55em 1em .35em 1em;
+      margin-top: -.2em;
+    }
+
+    &.active {
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: (-$videor-unit-gamma);
+        content: '';
+        width: 100%;
+        height: 1em;
+      }
+    }
+  }
+  
+  // Position bottom
+  &.tabs__position--bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &.tabs--alpha {
+    a {
+      @include transition(
+        height $videor-time-alpha ease-in-out, 
+        margin $videor-time-alpha ease-in-out, 
+        padding $videor-time-alpha ease-in-out
+      );
+
+      &.active,
+      &:hover {
+        background: $videor-color-lambda;
+        @include background(linear-gradient(top, #fff 0%, $videor-color-lambda 80%));
+      }
+
+      &.active {
+        &:after {
+          background: $videor-color-lambda;
+        }
+      }
+    }
+  }
+
+  &.tabs--beta {
+    margin: 0 0 $videor-unit-alpha 0;
+    border-bottom: 1px solid #BEC5BE;
+
+    a {
+      &.active,
+      &:hover {
+        background: $videor-color-lambda;
+        @include background(linear-gradient(top, $videor-color-lambda 0%, #fff 80%));
+      }
+
+      &.active {
+        &:after {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+// Force the position of the tabs
+.helper__tabs--alpha {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5.5em;
+  min-height: 105px;
+}
+

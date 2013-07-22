@@ -1,0 +1,60 @@
+h1 {
+  font: 1.8em $videor-font-alpha;
+  color: #000;
+  margin-bottom: .5em;
+  
+  &.alpha {
+    > span {
+      font-size: .725em;
+      color: $videor-color-gamma;
+    }
+  }
+
+  &.beta {
+    font-size: 1.625em;
+    margin-bottom: .25em;
+  }
+}
+
+h2 {
+  font: 1.5em $videor-font-beta;
+  color: #000;
+
+  &.alpha {
+    font-size: 1.35em;
+    min-height: 2.5em;
+  }
+}
+
+h3 {
+  font: 1.3em $videor-font-beta;
+  color: #000;
+
+  > span {
+    font-size: .825em;
+  }
+  
+  &.alpha {
+    color: $videor-color-beta;
+  }
+  
+  &.beta {
+    color: $videor-color-gamma;
+  }
+  
+  &.gamma {
+    color: #fff;
+  }
+}
+
+h4 {
+  font: 1.05em $videor-font-alpha;
+  color: #000;
+}
+
+h5 {
+  font: .95em sans-serif;
+  font-variant: small-caps;
+  color: $videor-color-gamma;
+  margin-bottom:.35em;
+}

@@ -1,0 +1,87 @@
+/*
+ * Auto width helper
+ * http://stackoverflow.com/a/11815907/1012875
+ */
+.helper--alpha {
+  display: block;
+  overflow: hidden;
+}
+
+.helper--beta {
+  line-height: $videor-height-alpha + .65em;
+}
+
+.helper--gamma {
+  padding-left: 0;
+}
+
+.helper--delta {
+  display: inline-block;
+}
+
+.helper--epsilon {
+  padding-top: $videor-unit-gamma;
+  padding-bottom: $videor-unit-gamma;
+  padding-right: 24px;
+
+  @include breakpoint(medium) {
+    padding-right: 12px;
+  }
+}
+
+.unit--alpha {
+  margin-bottom: $videor-unit-gamma;
+}
+
+.unit--beta {
+  margin-bottom: $videor-unit-delta;
+}
+
+.unit--gamma {
+  margin-bottom: $videor-unit-epsilon;
+}
+
+.unit--epsilon {
+  margin-bottom: $videor-unit-zeta;
+}
+
+.small-unit--epsilon {
+  @include breakpoint(small) {
+    margin-bottom: $videor-unit-zeta;
+  }
+}
+
+%ext--alpha {
+  @include breakpoint(large) {
+    min-height: 3em;
+  }
+}
+
+%ext--beta {
+  position: relative;
+  padding-bottom: .1em;
+  border-bottom: 1px solid #000;
+
+  &:before {
+    // position: absolute;
+    // top: -.175em;
+    // left: -5px;
+
+    position: absolute;
+    top: -0.275em;
+    left: -15px;
+    content: '\25B9';
+    clip: rect(auto, auto, auto, 3px);
+    font-size: 1.15em;
+  }
+}
+
+%ext--gamma {
+  background: $videor-color-eta;
+  border: 1px solid $videor-color-zeta;
+  padding: 5px;
+}
+
+%ext--delta {
+  border: 1px solid $videor-color-zeta;
+}

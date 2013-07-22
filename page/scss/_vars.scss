@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    $VARS
+\*------------------------------------*/
+/**
+ * Set up project-specific variables here which are then used throughout your
+ * build. These variables are automatically picked up by inuit.css so you should
+ * never need to modify any framework code.
+ */
+
+
+/**
+ * Debug mode will visually highlight any potential markup/accessibility quirks
+ * in the browser. Set to `true` or `false`.
+ */
+$debug-mode:        false!default;
+
+
+/**
+ * Do you want all elements to adopt `box-sizing:border-box;` as per
+ * paulirish.com/2012/box-sizing-border-box-ftw ?
+ */
+$global-border-box: true!default;
+
+
+/**
+ * Would you like to use Adam Whitcroft’s Batch icon font, as per:
+ * adamwhitcroft.com/batch ?
+ */
+$batch:             false!default;
+
+
+/**
+ * Base stuff
+ */
+$base-font-size-small:  .85em!default;
+$base-font-size-medium: 1em!default;
+$base-font-size-large:  1.75em!default;
+$base-font-size:        $base-font-size-large;
+$base-line-height:      2em!default;
+
+
+/**
+ * How big would you like round corners to be by default?
+ */
+$brand-round:        0!default;
+
+
+/**
+ * Responsiveness?
+ */
+$responsive:        true!default;
+
+/**
+ * Responsiveness for widescreen/high resolution desktop monitors and beyond?
+ * Note: $responsive parameter above must be enabled before enabling this.
+ */
+$responsive-extra:  false!default;
+
+/**
+ * Responsive push and pull produce a LOT of code, only turn them on if you
+ * definitely need them.
+ */
+$responsive-push:   false!default;
+$responsive-pull:   false!default;
+
+/**
+ * English quote marks?
+ */
+$english-quotes:    true!default;
+
+/**
+ * If you want English quotes then please do not edit these; they’re only here
+ * because Sass needs them.
+ */
+$open-quote:    null;
+$close-quote:   null;
+
+/**
+ * If you need non-English quotes, please alter the following values ac cordingly:
+ */
+@if $english-quotes != true{
+    $open-quote:    «;
+    $close-quote:   »;
+}
+ 
+
+/**
+ * inuit.css will work these next ones out for you.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;

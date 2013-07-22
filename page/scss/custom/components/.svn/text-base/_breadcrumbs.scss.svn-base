@@ -1,0 +1,27 @@
+.breadcrumbs {
+  ul {
+    margin: 0;
+  }
+  
+  %breadcrumbs--style {
+    color: $videor-color-gamma;
+  }
+  
+  li {
+    @extend %breadcrumbs--style;
+    float: left;
+    font-size: $videor-fontsize-alpha;
+    
+    &:first-child {
+      color: #000;
+    }
+    
+    > span {
+      padding-right: .25em;
+    }
+  }
+  
+  a {
+    @extend %breadcrumbs--style;
+  }
+}

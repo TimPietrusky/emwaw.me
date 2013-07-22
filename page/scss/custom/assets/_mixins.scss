@@ -1,0 +1,34 @@
+/*
+ * Striped (diagonal) backgrounds
+ * 
+ * $bg-color
+ * $darken-amount
+ * $bg-size
+ * $stripe-color
+ */
+@mixin striped-background($bg-color, $darken-amount, $bg-size, $stripe-color: darken($bg-color, $darken-amount)) {
+  background-color: $bg-color;
+  @include background-image(
+    linear-gradient(-45deg, $stripe-color 25%, transparent 25%, transparent 50%, $stripe-color 50%, $stripe-color 75%, transparent 75%, transparent)
+  );
+  background-size: $bg-size $bg-size;
+}
+
+/**
+ * Simple handler for breakpoints. 
+ *
+ * small: Smartphones
+ * medium: Tablets
+ * large: Desktop and TV's
+ */
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 65em) { @content; }
+  }
+  @if $point == medium {
+    @media (max-width: 65em) { @content; }
+  }
+  @if $point == small {
+    @media (max-width: 44em) { @content; } 
+  }
+}

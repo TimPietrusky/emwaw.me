@@ -1,0 +1,17 @@
+.icon {
+  &.icon--alpha {
+    background: $videor-color-gamma;
+    height: 7em;
+    width: 7em;
+    text-align: center;
+    display: table;
+
+    &:before {
+      font-size: 5em;
+      color: #fff;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}

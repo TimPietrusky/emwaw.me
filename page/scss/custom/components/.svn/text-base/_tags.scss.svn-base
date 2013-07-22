@@ -1,0 +1,28 @@
+  
+.tags {
+  // Tag for "special" products
+  &:before {
+    position: absolute;
+    left: 1.05em;
+    top: -.55em;
+    width: auto;
+    background: transparent;
+    content: attr(data-tag);
+    font-size: .8em;
+    color: #fff;
+    text-align: right;
+    padding: .25em 1.25em;
+  }
+
+  &.tags__alpha {
+    &:before {
+      background: $videor-color-ny;
+    }
+  }
+
+  &.tags__beta {
+    &:before {
+      background: $videor-color-xi;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.navigation {
+  
+  @include breakpoint(small) {
+    &.navigation--alpha {
+      position: fixed;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      background: #fff;
+      padding: $videor-unit-alpha / 2 0 0 0;
+      border-bottom: $videor-unit-gamma solid $videor-color-alpha;
+    }
+  }
+
+  &.navigation--beta {
+    @extend %ext--gamma;
+
+    h3 {
+      @extend %ext--delta;
+      border-left: 3px solid $videor-color-delta;
+      border-bottom: none;
+      padding:.25em .5em;
+      background: #fff;
+    }
+
+    ul {
+      @extend %ext--delta;
+      background: #fff;
+      margin: 0;
+      border-left: none;
+      
+      &.level0 {
+        border:none;
+        margin-left:-3px;
+      }
+      
+      li {
+        border-left: 3px solid $videor-color-delta;
+        
+        &:last-child a {
+          border-bottom:none;
+        }
+        
+        a {
+          display:block;
+          text-decoration:none;
+          padding:.25em .75em;
+          margin-left:-2px;
+          border-bottom:1px dotted $videor-color-zeta;
+          
+          &:after {
+            content:'\203A';
+            float:right;
+          }
+        }
+        
+        &.level1 {
+          border-left-color: lighten($videor-color-delta, 30%);
+          background: $videor-color-lambda;
+          
+          a {
+            padding-left:1.25em;
+          }
+        }
+      }
+    }
+
+    &.navigation--beta__alpha {
+      h3 {
+        border-left-color: $videor-color-beta;
+      }
+
+      ul {
+        li {
+          border-color: $videor-color-beta;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * @TODO [TimPietrusky] - Clean code and remove
+ */
+.nav-container {
+  @extend %ext--gamma;
+  
+  ul {
+    @extend %ext--delta;
+    background: #fff;
+    margin: 0;
+    border-left: none;
+    
+    &.level0 {
+      border:none;
+      margin-left:-3px;
+    }
+    
+    li {
+      border-left: 3px solid $videor-color-delta;
+      
+      &:last-child a {
+        border-bottom:none;
+      }
+      
+      a {
+        display:block;
+        text-decoration:none;
+        padding:.25em .75em;
+        margin-left:-2px;
+        border-bottom:1px dotted $videor-color-zeta;
+        
+        &:after {
+          content:'\203A';
+          float:right;
+        }
+      }
+      
+      &.level1 {
+        border-left-color: lighten($videor-color-delta, 30%);
+        background: $videor-color-lambda;
+        
+        a {
+          padding-left:1.25em;
+        }
+      }
+    }
+  }
+}

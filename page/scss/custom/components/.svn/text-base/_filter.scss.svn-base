@@ -1,0 +1,79 @@
+.factfinder--filter {
+  
+  /*
+   * Keep the childs together
+   */
+  %filter--child {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  /*
+   * Hide wide content in column
+   */
+  %filter--column {
+    position: relative;
+    padding-right: .25em;
+      
+    &:before {
+      position: absolute;
+      z-index: 1;
+      content: '';
+      top: 0;
+      right: 0;
+      width: 1.5em;
+      height: 100%;
+      @include background(linear-gradient(left, rgba(255, 255, 255, 0) 0%, #fff 70%)); 
+    }
+  }
+  
+  li {
+    @extend %filter--child;
+    padding-left: .15em
+  }
+  
+  dl {
+    margin-bottom: .5em;
+  }
+  
+  #global1_filters {
+    ul {
+      > li {
+        @extend %filter--column;
+        
+        width: 20%;
+        float: left;
+        padding-left: 10px;
+        
+        &:nth-child(1),
+        &:nth-child(6) {
+          padding-left: .15em;
+        }
+      }
+    }
+  }
+  
+  #global2_filters,
+  #base_filters,
+  #expert_filters {
+    dl {
+      @extend %filter--child;
+      @extend %filter--column;
+      
+      &:nth-child(6) {
+        clear: both;
+      }
+    }
+  }
+  
+  /* Hide the price (first child) */
+  #global2_filters {
+    dl {
+      &:first-child {
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+}

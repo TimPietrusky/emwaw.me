@@ -1,0 +1,39 @@
+%box--ext__alpha {
+  background: $videor-color-eta;
+  padding: $videor-unit-delta;
+  margin: $videor-unit-gamma 0;
+}
+
+%box--ext__beta {
+  border: 1px solid $videor-color-zeta;
+}
+
+.box {
+  position: relative;
+
+  &.box--alpha {
+    @extend %box--ext__alpha;
+    border-radius: $videor-border-radius-alpha;
+
+    &.tags {
+      margin-top: $videor-unit-gamma * 1.5;
+      padding: $videor-unit-delta * 1.5 $videor-unit-delta $videor-unit-delta $videor-unit-delta;
+    }
+  }
+
+  &.box--beta {
+    @extend %box--ext__beta;
+  }
+
+  &.box--gamma {
+    @extend %box--ext__alpha;
+    @extend %box--ext__beta;
+
+    padding: $videor-unit-delta / 2;
+    background: $videor-color-iota;
+
+    &.box--gamma__alpha {
+      padding: 0;
+    }
+  }
+}

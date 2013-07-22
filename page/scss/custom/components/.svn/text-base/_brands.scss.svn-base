@@ -1,0 +1,51 @@
+.brands {
+    position: relative;
+    margin-top: 18px;
+    height: 54px;
+
+  #logo-carousel-wrapper {
+    height: 54px;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 5%;
+  }
+
+  .logo-carousel-container {
+    width: 2500px;
+
+    .slide {
+      float: left;
+      width: 450px;
+      height: 54px;
+
+      > div {
+        float: left;
+        width: 150px;
+        height: 54px;
+        text-align: center;
+      }
+    }
+  }
+
+  .logo-carousel-control {
+    position: absolute;
+    top: 35px;
+    cursor:pointer;
+    width: 32px;
+    margin-top: -31px;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    color: #ccc;
+  }
+
+  .logo-control-prev {
+    left: 5px;
+  }
+  .logo-control-next {
+    right: 5px;
+
+    > img {
+      margin-left:18px;
+    }
+  }
+}

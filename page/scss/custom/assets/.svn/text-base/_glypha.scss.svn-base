@@ -1,0 +1,10 @@
+@font-face{
+font-family:"Glypha LT W01 55 Roman";
+src:url("../fonts/5d685597-f360-4464-a715-9c1484c941d1.eot?#iefix");
+src:url("../fonts/5d685597-f360-4464-a715-9c1484c941d1.eot?#iefix") format("eot"),url("../fonts/2ac87a71-d939-489d-bc6b-347d07881063.woff") format("woff"),url("../fonts/9884d4c9-f5c9-40fc-839d-e64bc2bca326.ttf") format("truetype"),url("../fonts/9afb9aeb-d1ab-4165-858b-a9f6a9329cc2.svg#9afb9aeb-d1ab-4165-858b-a9f6a9329cc2") format("svg");
+}
+@font-face{
+font-family:"Glypha LT W01 65 Bold";
+src:url("../fonts/a9fac05b-7139-447c-9d0a-e2cfe6f08956.eot?#iefix");
+src:url("../fonts/a9fac05b-7139-447c-9d0a-e2cfe6f08956.eot?#iefix") format("eot"),url("../fonts/52db8eec-5d0e-4047-9df3-01b004f01371.woff") format("woff"),url("../fonts/fb20e835-937d-4e90-b91a-38e17c8bb0ee.ttf") format("truetype"),url("../fonts/124daf03-3c02-409f-aa57-3b8cb061723e.svg#124daf03-3c02-409f-aa57-3b8cb061723e") format("svg");
+}
