@@ -6,7 +6,7 @@
 $emw--color-alpha: #fff;
 $emw--color-beta: #000;
 $emw--color-gamma: #e74c3c;
-$emw--color-delta: 0;
+$emw--color-delta: darken($emw--color-alpha, 5.25%);
 $emw--color-epsilon: 0;
 
 /**
@@ -53,10 +53,17 @@ $emw--unit-theta: .5em;
 
 %emw__modifier-zeta {
   background: $emw--color-gamma;
+  font-weight: 700;
   color: $emw--color-alpha;
   padding: $emw--unit-theta;
   display: inline-block;
   width: 100%;
+  border: none;
+
+  &:hover {
+    color: $emw--color-beta;
+    background: $emw--color-alpha;
+  }
 }
 
 %emw__modifier-eta {}
@@ -72,7 +79,7 @@ $emw--unit-theta: .5em;
 }
 
 .emw__element-beta {
-  
+  margin-bottom: $emw--unit-epsilon / 4 !important;
 }
 
 /**

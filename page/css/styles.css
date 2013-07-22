@@ -2205,12 +2205,18 @@ pre[class*="language-"] {
   margin-bottom: 2.15em !important;
 }
 
-nav a, button {
+nav a, .button {
   background: #e74c3c;
+  font-weight: 700;
   color: white;
   padding: 0.5em;
   display: inline-block;
   width: 100%;
+  border: none;
+}
+nav a:hover, .button:hover {
+  color: black;
+  background: white;
 }
 
 /**
@@ -2218,6 +2224,10 @@ nav a, button {
  * Elements 
  * 
  */
+.emw__element-beta {
+  margin-bottom: 0.2375em !important;
+}
+
 /**
  * 
  * Mixins 
@@ -2231,14 +2241,14 @@ nav a, button {
  */
 .ribbon {
   color: white;
-  background: #e74c3c;
+  background: #3498db;
   -webkit-transition: color 0.25s ease-in, background 0.25s ease-in;
   -moz-transition: color 0.25s ease-in, background 0.25s ease-in;
   -o-transition: color 0.25s ease-in, background 0.25s ease-in;
   transition: color 0.25s ease-in, background 0.25s ease-in;
 }
 .ribbon:hover {
-  color: #e74c3c;
+  color: #3498db;
   background: white;
 }
 
@@ -2247,7 +2257,7 @@ nav a, button {
  */
 .ribbon {
   position: absolute;
-  padding: 0.5em;
+  padding: 0.95em;
   text-decoration: none;
   /* 
    * Position of the ribbon
@@ -2255,21 +2265,21 @@ nav a, button {
 }
 .ribbon.ribbon--top-left {
   top: 0.95em;
-  left: 0.75em;
+  left: 0.95em;
 }
 .ribbon.ribbon--top-right {
   top: 0.95em;
-  right: -0.75em;
-  padding-right: 1.5em;
+  right: -0.95em;
+  padding-right: 1.9em;
 }
 .ribbon.ribbon--bottom-left {
   bottom: 0.95em;
-  left: 0.75em;
+  left: 0.95em;
 }
 .ribbon.ribbon--bottom-right {
   bottom: 0.95em;
-  right: -0.75em;
-  padding-right: 1.5em;
+  right: -0.95em;
+  padding-right: 1.9em;
 }
 
 * {
@@ -2358,10 +2368,15 @@ nav {
 }
 nav ul {
   list-style: none;
-  margin: 0;
+  margin-left: 0 !important;
 }
 nav ul li {
   text-align: center;
+  padding: 0 .15em;
+  margin: 0 0 0 0;
+}
+nav ul li.g {
+  padding-left: 0;
 }
 @media (max-width: 65em) {
   nav ul {
@@ -2399,7 +2414,6 @@ nav a:hover {
   }
   nav > .g {
     padding-left: 0;
-    width: 50%;
   }
   nav > .g.medium-one-whole {
     width: 100%;
@@ -2409,16 +2423,25 @@ nav a:hover {
   }
 }
 
-button {
-  border: none;
-  float: right;
-  width: 100%;
-  font-weight: 700;
-  padding: 1.075em 0.5em;
+.button {
+  min-height: 4em;
+  -webkit-transition: color 0.25s ease-in, background 0.25s ease-in;
+  -moz-transition: color 0.25s ease-in, background 0.25s ease-in;
+  -o-transition: color 0.25s ease-in, background 0.25s ease-in;
+  transition: color 0.25s ease-in, background 0.25s ease-in;
+}
+.button.button__alpha {
+  text-align: center;
+  padding: 1.15em 0 0 0;
+}
+.button:hover {
+  background: white;
+  color: #e74c3c;
 }
 
 label {
   display: inline-block;
+  font-weight: 700;
 }
 
 input {
@@ -2426,6 +2449,8 @@ input {
   padding: 0.13438em 0.26875em;
   font-size: 2.15em;
   line-height: 2.15em;
+  border: none;
+  background: #f2f2f2;
 }
 
 /*

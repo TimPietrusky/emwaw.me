@@ -33,19 +33,19 @@
             <div class="g one-half medium-one-whole">
             
                 <ul class="gw">
-                  <li class="g one-quarter medium-one-half">
+                  <li class="g one-quarter">
                     <a href="#what">What?</a>
                   </li>
                   
-                  <li class="g one-quarter medium-one-half">
+                  <li class="g one-quarter">
                     <a href="#good-example">Example</a>
                   </li>
                   
-                  <li class="g one-quarter medium-one-half">
+                  <li class="g one-quarter">
                     <a href="#use-it">Use it</a>
                   </li>
                   
-                  <li class="g one-quarter medium-one-half">
+                  <li class="g one-quarter">
                     <a href="#code">Code</a>
                   </li>
                 </ul>
@@ -54,8 +54,8 @@
         </nav>
         
         <p>
-            An framework which combines <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">Harry Roberts "MindBEMding"</a> 
-            and <a href="http://timpietrusky.com" target="_blank">my</a> idea for a <b>collection of reusable SCSS</b>:
+            A framework which combines <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">Harry Roberts "MindBEMding"</a> 
+            and <a href="http://timpietrusky.com" target="_blank">my</a> idea for a collection of <b>reusable SCSS components</b>:
         </p>
         
         <ul>
@@ -69,9 +69,10 @@
         
         <span id="what"></span>
         
-        <p>
-            Those SCSS rules have a <b>100% reuse guarantee</b>. 
-             
+        <p class="emw__element-alpha">
+            <a href="http://www.reddit.com/r/web_design/comments/1itc56/a_scss_framework_based_on_reusable_components/" target="_blank" class="emw__element-alpha">
+                Please vote for us on Reddit!
+            </a>
         </p>
         
         <h2>
@@ -84,13 +85,13 @@
         
         <ul>
             <li>decapsulate your SCSS variables, extensions & mixins into one file</li>
-            <li>get a uniform naming-pattern for your SCSS variables, extensions & mixins</li>
+            <li>get a uniform naming-pattern based on the greek alphabet</li>
         </ul>
         
         <h2>The Bad Example</h2>
 
         <p class="emw__element-alpha">
-            The <b>Bad Example</b> shows how you <b>shouldn't use SCSS variables extensions and mixins</b> inside your project. 
+            The <b>Bad Example</b> shows how you <b>shouldn't use</b> SCSS <b>variables, extensions and mixins</b> inside your project. 
         </p>
         
         <p class="emw__element-alpha">
@@ -198,27 +199,39 @@ footer {
             <b>龴ↀ◡ↀ龴</b>
             
             <form method="GET" action="#code">
-                <label for="a" class="emw__element-alpha">Change the amount of the generated SCSS helper (up to 16): </label>
-                <input name="a" type="number" value="<?php echo Emwawme::getUnitAlpha(); ?>"/>
+                <label for="a" class="emw__element-beta">Change the amount of the generated SCSS helper (up to 16): </label>
+                <input name="a" class="emw__element-beta" type="number" value="<?php echo Emwawme::getUnitAlpha(); ?>"/>
                 
-                <button type="submit">generate</button>
+                <div class="gw">
+                    <div class="g one-half">
+                         <button class="button" type="submit">generate</button>
+                    </div>
+                    
+                    <div class="g one-half">
+                    <a href="raw.php?a=<?php echo Emwawme::getUnitAlpha(); ?>" target="_blank" class="button button__alpha">
+                         download
+                    </a>
+                    </div>
+                </div>
+               
             </form>
         </p>
         
         <pre><code class="language-scss"><?php Emwawme::generate(); ?></code></pre>
         
         <footer>
-            <p>
+            <p class="emw__element-alpha">
                 We love <a href="http://emmmmmm.com" target="_blank">em</a> so please (╯°□°）╯︵ ┻━┻ on every px you can find!
             </p>
             
-            <br>
+            <a href="http://www.reddit.com/r/web_design/comments/1itc56/a_scss_framework_based_on_reusable_components/" target="_blank" class="button emw__element-alpha">
+                Vote on Reddit!
+            </a>
             
             <p>
                 2013 by <a href="http://timpietrusky.com" target="_blank">Tim Pietrusky</a>. You should
                 <a href="https://github.com/TimPietrusky/emwaw.me" target="_blank">fork me on GitHub</a>.
             </p>
-            
 
         </footer>
         

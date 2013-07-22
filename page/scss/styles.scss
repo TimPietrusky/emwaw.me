@@ -76,7 +76,7 @@ a {
   &:hover {
     text-decoration: none;
     background: $emw--color-gamma;
-    color: $emw--color-alpha;
+    color: $emw--color-alpha; 
   }
 }
 
@@ -106,10 +106,16 @@ nav {
 
   ul {
     list-style: none;
-    margin: 0;
+    margin-left: 0 !important;
 
     li {
       text-align: center;
+      padding: 0 .15em;
+      margin: 0 0 0 0;
+
+      &.g {
+        padding-left: 0;
+      }
     }
 
     @include breakpoint(medium) {
@@ -144,7 +150,6 @@ nav {
 
     > .g {
       padding-left: 0;
-      width: 50%;
 
       &.medium-one-whole {
         width: 100%;
@@ -156,17 +161,30 @@ nav {
   }
 }
 
-button {
+.button {
   @extend %emw__modifier-zeta;
-  border: none;
-  float: right;
-  width: 100%;
-  font-weight: 700;
-  padding: $emw--unit-beta $emw--unit-theta;
+
+  min-height: 4em;
+
+  &.button__alpha {
+    text-align: center;
+    padding: 1.15em 0 0 0;
+  }
+
+  &:hover {
+    background: $emw--color-alpha;
+    color: $emw--color-gamma;
+  }
+
+  @include transition(
+    color .25s ease-in,
+    background .25s ease-in
+  );
 }
 
 label {
   display: inline-block;
+  font-weight: 700;
 }
 
 input {
@@ -174,6 +192,8 @@ input {
   padding: $emw--unit-beta / 8 $emw--unit-beta / 4;
   font-size: $emw--unit-alpha;
   line-height: $emw--unit-alpha;
+  border: none;
+  background: $emw--color-delta;
 }
 
 /*

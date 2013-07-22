@@ -1,14 +1,14 @@
 // Vertical space between ribbon and screen
 $unit-alpha: $emw--unit-epsilon;
 // Horizontal space between ribbon and screen
-$unit-beta: .75em;
+$unit-beta: $emw--unit-epsilon;
 // Padding for the ribbon
-$unit-gamma: .5em;
+$unit-gamma: $emw--unit-epsilon;
 
 /*
  * Colors
  */
-$color-alpha: #e74c3c;
+$color-alpha: #3498db;
 $color-beta: #c0392b;
 $color-gamma: #fff;
 
