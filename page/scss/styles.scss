@@ -100,7 +100,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  padding: $emw--unit-epsilon 0;
+  padding: 0;
   width: 100%;
   background: $emw--color-alpha;
 
@@ -113,7 +113,7 @@ nav {
     }
 
     @include breakpoint(medium) {
-      margin-top: .5em;
+      margin-top: 0;
 
       li {
         padding: 0;
@@ -139,7 +139,7 @@ nav {
 
   @include breakpoint(medium) {
     z-index: 1337;
-    padding: $emw--unit-theta $emw--unit-theta;
+    padding: 0;
 
     &.gw {
       margin-left: 0;

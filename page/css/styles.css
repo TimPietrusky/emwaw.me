@@ -2342,7 +2342,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 0.95em 0;
+  padding: 0;
   width: 100%;
   background: white;
   padding-left: 15%;
@@ -2357,7 +2357,7 @@ nav ul li {
 }
 @media (max-width: 65em) {
   nav ul {
-    margin-top: .5em;
+    margin-top: 0;
   }
   nav ul li {
     padding: 0;
@@ -2390,7 +2390,7 @@ nav a:hover {
 @media (max-width: 65em) {
   nav {
     z-index: 1337;
-    padding: 0.5em 0.5em;
+    padding: 0;
   }
   nav.gw {
     margin-left: 0;

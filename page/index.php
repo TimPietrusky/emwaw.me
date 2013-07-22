@@ -184,11 +184,10 @@ footer {
             Or <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/_emwaw.me.scss" target="_blank">download</a> the whole framework.
         </p>
         
-        <pre><code class="language-scss">@import "emwaw.me";</code></pre>
-        
         <span id="code"></span>
         
-
+        <pre><code class="language-scss">@import "emwaw.me";</code></pre>
+        
         
         <h2>
             Grab your piece of the code
@@ -196,6 +195,8 @@ footer {
         
         <p class="emw__element-alpha">
             <b>龴ↀ◡ↀ龴</b>
+            <br><br>
+            or just <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/_emwaw.me.scss" target="_blank">download</a> it.
         </p>
         
         <pre><code class="language-scss"><?php Emwawme::generate(); ?></code></pre>
@@ -204,6 +205,15 @@ footer {
             <p>
                 We love <a href="http://emmmmmm.com" target="_blank">em</a> so please (╯°□°）╯︵ ┻━┻ on every px you can find!
             </p>
+            
+            <br>
+            
+            <p>
+                2013 by <a href="http://timpietrusky.com" target="_blank">Tim Pietrusky</a>. You should
+                <a href="https://github.com/TimPietrusky/emwaw.me" target="_blank">fork me on GitHub</a>.
+            </p>
+            
+
         </footer>
         
         <a href="https://github.com/TimPietrusky/emwaw.me" class="ribbon ribbon--top-right" target="_blank">
