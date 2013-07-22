@@ -180,13 +180,15 @@ footer {
             import that file into your SCSS.
         </p>
         
+        <p>
+            Or <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/emwawme.scss" target="_blank">download</a> the whole framework.
+        </p>
+        
         <pre><code class="language-scss">@import "emwaw.me";</code></pre>
         
         <span id="code"></span>
         
-        <p>
-            <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/emwawme.scss" target="_blank">Download</a>
-        </p>
+
         
         <h2>
             Grab your piece of the code
