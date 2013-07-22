@@ -185,7 +185,7 @@ footer {
         <span id="code"></span>
         
         <p>
-            <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/emwawme.scss" target="_blank">Download</a>
+            <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/emwawme.scss" target="_blank">Download</a>
         </p>
         
         <h2>
