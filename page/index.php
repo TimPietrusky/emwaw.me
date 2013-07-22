@@ -181,7 +181,7 @@ footer {
         </p>
         
         <p>
-            Or <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/emwawme.scss" target="_blank">download</a> the whole framework.
+            Or <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/_emwaw.me.scss" target="_blank">download</a> the whole framework.
         </p>
         
         <pre><code class="language-scss">@import "emwaw.me";</code></pre>
