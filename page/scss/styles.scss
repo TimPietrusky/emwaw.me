@@ -123,11 +123,7 @@ nav {
   }
 
   a {
-    background: $emw--color-gamma;
-    color: $emw--color-alpha;
-    padding: $emw--unit-theta;
-    display: inline-block;
-    width: 100%;
+    @extend %emw__modifier-zeta;
 
     &:hover {
       background: $emw--color-alpha;
@@ -160,9 +156,28 @@ nav {
   }
 }
 
+button {
+  @extend %emw__modifier-zeta;
+  border: none;
+  float: right;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  padding: $emw--unit-beta / 8 $emw--unit-beta / 4;
+  font-size: $emw--unit-alpha;
+  line-height: $emw--unit-alpha;
+}
+
 /*
  * Footer
  */
 footer {
-
+  border-top: $emw--unit-theta solid $emw--color-gamma;
+  padding: $emw--unit-theta 0;
 }

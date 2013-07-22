@@ -2205,6 +2205,14 @@ pre[class*="language-"] {
   margin-bottom: 2.15em !important;
 }
 
+nav a, button {
+  background: #e74c3c;
+  color: white;
+  padding: 0.5em;
+  display: inline-block;
+  width: 100%;
+}
+
 /**
  * 
  * Elements 
@@ -2364,13 +2372,6 @@ nav ul li {
     margin: 0;
   }
 }
-nav a {
-  background: #e74c3c;
-  color: white;
-  padding: 0.5em;
-  display: inline-block;
-  width: 100%;
-}
 nav a:hover {
   background: white;
   color: #e74c3c;
@@ -2408,6 +2409,27 @@ nav a:hover {
   }
 }
 
+button {
+  border: none;
+  float: right;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  padding: 0.13438em 0.26875em;
+  font-size: 2.15em;
+  line-height: 2.15em;
+}
+
 /*
  * Footer
  */
+footer {
+  border-top: 0.5em solid #e74c3c;
+  padding: 0.5em 0;
+}

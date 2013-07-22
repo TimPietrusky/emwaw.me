@@ -2,34 +2,32 @@
 
 
 class Emwawme {
+
+
+	public static $names = array(
+		'alpha',
+		'beta',
+		'gamma',
+		'delta',
+		'epsilon',
+		'zeta',
+		'eta',
+		'theta',
+		'iota',
+		'kappa',
+		'lambda',
+		'my',
+		'ny',
+		'xi',
+		'omikron',
+		'pi'
+	); 
 	
 	public static function generate() {
 		$theme = "emw";
-
 		$alpha = "\n\n";
-
-		$names = array(
-			'alpha',
-			'beta',
-			'gamma',
-			'delta',
-			'epsilon',
-			'zeta',
-			'eta',
-			'theta',
-			'iota',
-			'kappa',
-			'lambda',
-			'my',
-			'ny',
-			'xi',
-			'omikron',
-			'pi'
-		); 
-
-		$names_length = count($names);
-
-		//$names_length = 10;
+		$names_length = Emwawme::getUnitAlpha();
+		$names = Emwawme::$names;
 
 		// Colors
 		echo "/**\n * \n * Colors \n * \n */\n";
@@ -76,6 +74,28 @@ class Emwawme {
 		for ($i = 0; $i < $names_length; $i++) { 
 			echo "@mixin $theme" . "__mixin-" . $names[$i] . "() {}\n";
 		}
+	}
+
+	public static function getUnitAlpha() {
+		$names_length = count(Emwawme::$names);
+
+		// if (isset($_POST['emw--unit-alpha'])) {
+		//   $names_length = $_POST['emw--unit-alpha'] % ($names_length + 1);
+
+		//   if ($names_length <= 0) {
+		//   	$names_length = 1;
+		//   }
+		// }
+
+		if (isset($_GET['emw--unit-alpha'])) {
+			  $names_length = $_GET['emw--unit-alpha'] % ($names_length + 1);
+
+			  if ($names_length <= 0) {
+			  	$names_length = 1;
+			  }
+        }
+
+		return $names_length;
 	}
 }
 

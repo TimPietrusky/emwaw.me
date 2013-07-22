@@ -51,7 +51,14 @@ $emw--unit-theta: .5em;
   margin-bottom: $emw--unit-alpha !important;
 }
 
-%emw__modifier-zeta {}
+%emw__modifier-zeta {
+  background: $emw--color-gamma;
+  color: $emw--color-alpha;
+  padding: $emw--unit-theta;
+  display: inline-block;
+  width: 100%;
+}
+
 %emw__modifier-eta {}
 %emw__modifier-theta {}
 
@@ -65,7 +72,7 @@ $emw--unit-theta: .5em;
 }
 
 .emw__element-beta {
-
+  
 }
 
 /**

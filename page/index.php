@@ -167,9 +167,14 @@ footer {
 
         <span id="use-it"></span>
 
-        <p>
+        <p class="emw__element-alpha">
             Oh yes, that looks very good!
         </p>
+        
+        
+        <h2>
+            
+        </h2>
 
 
         <h2>
@@ -178,10 +183,6 @@ footer {
         <p>
             Get the parts of <b>emwaw.me</b> that are useful to you, put them inside a <b>_emwaw.me.scss</b> and 
             import that file into your SCSS.
-        </p>
-        
-        <p>
-            Or <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/_emwaw.me.scss" target="_blank">download</a> the whole framework.
         </p>
         
         <span id="code"></span>
@@ -195,8 +196,13 @@ footer {
         
         <p class="emw__element-alpha">
             <b>龴ↀ◡ↀ龴</b>
-            <br><br>
-            or just <a href="https://raw.github.com/TimPietrusky/emwaw.me/master/scss/_emwaw.me.scss" target="_blank">download</a> it.
+            
+            <form method="GET" action="">
+                <label for="emw--unit-alpha" class="emw__element-alpha">Change the amount of the generated SCSS helper: </label>
+                <input name="emw--unit-alpha" type="number" value="<?php echo Emwawme::getUnitAlpha(); ?>"/>
+                
+                <button type="submit">generate</button>
+            </form>
         </p>
         
         <pre><code class="language-scss"><?php Emwawme::generate(); ?></code></pre>
