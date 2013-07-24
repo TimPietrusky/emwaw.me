@@ -7,7 +7,10 @@ $emw--color-alpha: #fff;
 $emw--color-beta: #000;
 $emw--color-gamma: #e74c3c;
 $emw--color-delta: darken($emw--color-alpha, 5.25%);
-$emw--color-epsilon: 0;
+$emw--color-epsilon: #3498db;
+$emw--color-zeta: #9b59b6;
+$emw--color-eta: #2ecc71;
+
 
 /**
  * 
@@ -22,6 +25,8 @@ $emw--unit-epsilon: .95em;
 $emw--unit-zeta: 15%;
 $emw--unit-eta: 1.05em;
 $emw--unit-theta: .5em;
+$emw--unit-iota: .35s;
+
 
 /**
  * 
@@ -43,7 +48,7 @@ $emw--unit-theta: .5em;
 }
 
 %emw__modifier-delta {
-  margin-top: $emw--unit-alpha / 1.75;
+  margin-top: $emw--unit-epsilon / 2;
   margin-bottom: $emw--unit-alpha / 2;
 }
 
@@ -82,6 +87,11 @@ $emw--unit-theta: .5em;
   margin-bottom: $emw--unit-epsilon / 4 !important;
 }
 
+.emw__element-gamma {
+   color: $emw--color-delta;
+}
+
+
 /**
  * 
  * Mixins 
@@ -90,11 +100,6 @@ $emw--unit-theta: .5em;
 @mixin emw__mixin-alpha($alpha, $beta) {
   padding-left: $alpha;
   padding-right: $alpha;
-
-  @include breakpoint(small) {
-    padding-left: $beta;
-    padding-right: $beta;
-  }
 
   @include breakpoint(medium) {
     padding-left: $beta;
@@ -112,4 +117,21 @@ $emw--unit-theta: .5em;
 
 @mixin emw__mixin-delta() {
 
+}
+
+/**
+ * 
+ * Animations 
+ * 
+ */
+$emw__animation-alpha: alpha $emw--unit-iota linear forwards;
+
+@include keyframes (alpha) {
+  0%, 100% {
+    background: $emw--color-delta;
+  }
+  
+  5% {
+    background: $emw--color-eta;
+  }
 }

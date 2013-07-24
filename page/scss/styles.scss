@@ -38,6 +38,7 @@ body {
   padding-top: $emw--unit-alpha * 4.15;
   padding-bottom: $emw--unit-alpha;
   overflow-x:hidden;
+
   @include emw__mixin-alpha($emw--unit-zeta, $emw--unit-theta);
 
   @include breakpoint(small) {
@@ -63,6 +64,10 @@ h2 {
   @extend %emw__modifier-gamma;
 }
 
+h3 {
+  margin: $emw--unit-epsilon * 2 0;
+}
+
 a { 
   color: $emw--color-gamma;
   text-decoration: none;
@@ -76,7 +81,7 @@ a {
   &:hover {
     text-decoration: none;
     background: $emw--color-gamma;
-    color: $emw--color-alpha; 
+    color: $emw--color-alpha;
   }
 }
 
@@ -165,10 +170,12 @@ nav {
   @extend %emw__modifier-zeta;
 
   min-height: 4em;
+  background: $emw--color-epsilon;
 
   &.button__alpha {
     text-align: center;
     padding: 1.15em 0 0 0;
+    background: $emw--color-zeta;
   }
 
   &:hover {
@@ -194,12 +201,15 @@ input {
   line-height: $emw--unit-alpha;
   border: none;
   background: $emw--color-delta;
+
+  @include animation($emw__animation-alpha);
 }
 
 /*
  * Footer
  */
 footer {
+  margin-top: $emw--unit-alpha * 3;
   border-top: $emw--unit-theta solid $emw--color-gamma;
-  padding: $emw--unit-theta 0;
+  padding: $emw--unit-theta * 4 0;
 }

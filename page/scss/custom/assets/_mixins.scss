@@ -32,3 +32,23 @@
     @media (max-width: 44em) { @content; } 
   }
 }
+
+/*
+ * Animation 
+ */
+@mixin animation($value) {
+  -webkit-animation: unquote($value);
+     -moz-animation: unquote($value);
+       -o-animation: unquote($value);
+          animation: unquote($value);
+}
+
+/*
+ * Keyframes
+ */
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+     @-moz-keyframes #{$name} { @content; }
+       @-o-keyframes #{$name} { @content; }
+          @keyframes #{$name} { @content; }
+}

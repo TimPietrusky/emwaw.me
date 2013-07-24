@@ -25,12 +25,12 @@ class Emwawme {
 	
 	public static function generate() {
 		$theme = "emw";
-		$alpha = "\n\n";
+		$alpha = "\n\n\n";
 		$names_length = Emwawme::getUnitAlpha();
 		$names = Emwawme::$names;
 
 		// Colors
-		echo "/**\n * \n * Colors \n * \n */\n";
+		echo "/** \n * Colors \n */\n";
 		for ($i = 0; $i < $names_length; $i++) { 
 			echo "\$$theme--color-" . $names[$i] . ': 0;' . "\n";
 		}
@@ -38,7 +38,7 @@ class Emwawme {
 		echo $alpha;
 
 		// Units
-		echo "/**\n * \n * Units \n * \n */\n";
+		echo "/** \n * Units \n */\n";
 		for ($i = 0; $i < $names_length; $i++) { 
 			echo "\$$theme--unit-" . $names[$i] . ': 0;' . "\n";
 		}
@@ -46,7 +46,7 @@ class Emwawme {
 		echo $alpha;
 
 		// Lists
-		echo "/**\n * \n * Lists \n * \n */\n";
+		echo "/** \n * Lists \n */\n";
 		for ($i = 0; $i < $names_length; $i++) { 
 			echo "\$$theme--list-" . $names[$i] . ': 0;' . "\n";
 		}
@@ -54,7 +54,7 @@ class Emwawme {
 		echo $alpha;
 
 		// Elements 
-		echo "/**\n * \n * Elements \n * \n */\n";
+		echo "/** \n * Elements \n */\n";
 		for ($i = 0; $i < $names_length; $i++) { 
 			echo ".$theme" . "__element-" . $names[$i] . " {}\n";
 		}
@@ -62,7 +62,7 @@ class Emwawme {
 		echo $alpha;
 
 		// Modifier 
-		echo "/**\n * \n * Modifier \n * \n */\n";
+		echo "/** \n * Modifier \n */\n";
 		for ($i = 0; $i < $names_length; $i++) { 
 			echo "%$theme" . "__modifier-" . $names[$i] . " {}\n";
 		}
@@ -70,7 +70,7 @@ class Emwawme {
 		echo $alpha;
 
 		// Mixins 
-		echo "/**\n * \n * Mixins \n * \n */\n";
+		echo "/** \n * Mixins \n */\n";
 		for ($i = 0; $i < $names_length; $i++) { 
 			echo "@mixin $theme" . "__mixin-" . $names[$i] . "() {}\n";
 		}
